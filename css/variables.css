@@ -1,0 +1,14 @@
+:root {
+    /* Paleta Oficial */
+    --primary-color: #7C3AED;   /* Morado Eléctrico */
+    --bg-dark: #000000;         /* Negro Profundo */
+    --text-light: #FFFFFF;      /* Blanco Puro */
+    
+    /* Variaciones y neutros para la narrativa visual */
+    --bg-card: #0b0b0b;         
+    --text-muted: #A3A3A3;      
+    
+    /* Tipografía y suavizado generales */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}

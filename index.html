@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkPro | Productora Audiovisual y Estudio de Diseño</title>
+    <!-- Hojas de estilo del ecosistema MarkPro -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN GLOBAL 
+         (Inyectado dinámicamente mediante js/main.js) -->
+    <header class="navbar" id="global-header"></header>
+
+    <main>
+        <!-- ACTO 1: LA LLAMADA A LA AVENTURA (Hero Section Limpia) -->
+        <section id="hero" class="hero-section" style="height: 100vh;">
+            <!-- Capas para el efecto Parallax e iluminación interactiva -->
+            <div class="hero-bg-wrapper" id="heroBg"></div>
+            <div class="interactive-glow" id="heroGlow"></div>
+
+            <div class="hero-content" id="heroContent">
+                <h1>No solo creamos contenido. <br>Escribimos el <span class="highlight">éxito</span> de tu marca.</h1>
+                <p>En un mundo saturado de ruido, los que no cuentan una historia son olvidados. Diseñamos las armas visuales que necesitas para conquistar tu mercado.</p>
+                <a href="#sobre-nosotros" class="btn-primary">Conoce el Estudio</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN INDEPENDIENTE: SOBRE NOSOTROS (Ubicada exactamente bajo el Hero) -->
+        <section id="sobre-nosotros" style="padding: 6rem 5%; background: var(--bg-dark, #0a0a0a); position: relative; scroll-margin-top: 80px;">
+            <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 5rem 5%; background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 30%, rgba(20, 20, 20, 0.85) 100%), url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop'); background-size: cover; background-position: center; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+                
+                <div class="section-intro" style="margin-bottom: 4rem; text-align: center;">
+                    <span class="story-badge">Sobre Nosotros</span>
+                    <h2 class="section-title" style="font-size: 2.5rem; margin-top: 1rem; color: #fff;">El ADN de MarkPro Creative Studio</h2>
+                </div>
+
+                <!-- Bloques de Propósito (Manifiesto) -->
+                <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    
+                    <!-- Quiénes Somos -->
+                    <div class="service-card" style="height: auto; padding: 2.5rem; align-items: flex-start; flex-direction: column; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08);">
+                        <div class="icon" style="font-size: 2.2rem; margin-bottom: 1rem;">👥</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-light, #fff);">¿Quiénes Somos?</h3>
+                        <p class="story-text" style="opacity: 0.9; font-size: 0.95rem; line-height: 1.6; color: #ccc;">
+                            Somos un colectivo de directores de arte, cineastas independientes, diseñadores vectoriales y estrategas narrativos obsesionados con la perfección estética. Fusionamos la precisión técnica del diseño gráfico con la fuerza emocional del cine.
+                        </p>
+                    </div>
+
+                    <!-- Qué Hacemos -->
+                    <div class="service-card" style="height: auto; padding: 2.5rem; align-items: flex-start; flex-direction: column; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08);">
+                        <div class="icon" style="font-size: 2.2rem; margin-bottom: 1rem;">🛠️</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-light, #fff);">¿Qué Hacemos?</h3>
+                        <p class="story-text" style="opacity: 0.9; font-size: 0.95rem; line-height: 1.6; color: #ccc;">
+                            Construimos ecosistemas visuales memorables. Desde el desarrollo geométrico de identidades corporativas e impecables logotipos vectoriales, hasta la producción cinematográfica de gran formato, spots comerciales y fotografía de vanguardia.
+                        </p>
+                    </div>
+
+                    <!-- Por qué lo Hacemos -->
+                    <div class="service-card" style="height: auto; padding: 2.5rem; align-items: flex-start; flex-direction: column; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08);">
+                        <div class="icon" style="font-size: 2.2rem; margin-bottom: 1rem;">🔥</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-light, #fff);">¿Por qué lo Hacemos?</h3>
+                        <p class="story-text" style="opacity: 0.9; font-size: 0.95rem; line-height: 1.6; color: #ccc;">
+                            Porque vivimos en la era de la distracción digital masiva. Si tu negocio no proyecta estatus y autoridad de inmediato, simplemente es invisible. Creamos narrativas de alto impacto visual para que dejes una huella comercial imborrable.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTO 2: LAS ARMAS DEL HÉROE (Sección Servicios con Cuadros Clickeables) -->
+        <section id="servicios" class="services-section" style="border-top: 1px solid rgba(255, 255, 255, 0.05);">
+            <div class="section-intro">
+                <span class="story-badge">El Manifiesto</span>
+                <h2 class="section-title">El arsenal creativo para dominar el ecosistema digital</h2>
+                <p class="section-subtitle">Tu marca es la protagonista. Nosotros construimos el escenario, forjamos la identidad y encendemos las luces para que dejes una huella imborrable.</p>
+            </div>
+
+            <div class="services-grid">
+                
+                <!-- Tarjeta 1: Diseño de Identidad -->
+                <a href="identidad.html" class="service-card" style="text-decoration: none; display: flex;">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="icon">🎨</div>
+                        <h3>Diseño de Identidad</h3>
+                        <p class="story-text">Tu logotipo no es un dibujo; es tu escudo de armas. Estructuramos vectores impecables y universos tipográficos que transmiten autoridad instantánea y vuelven locos a tus competidores.</p>
+                        <span class="card-link">Forjar identidad &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Tarjeta 2: Producción Audiovisual -->
+                <a href="produccion.html" class="service-card" style="text-decoration: none; display: flex;">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="icon">🎬</div>
+                        <h3>Producción Audiovisual</h3>
+                        <p class="story-text">Ritmo cinematográfico, colorimetría inmersiva y un montaje que corta la respiración. Capturamos la épica de tus proyectos de gran formato y los convertimos en piezas documentales de colección.</p>
+                        <span class="card-link">Rodar escena &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Tarjeta 3: Video Publicitario -->
+                <a href="publicidad.html" class="service-card" style="text-decoration: none; display: flex;">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="icon">🚀</div>
+                        <h3>Videos Publicitarios</h3>
+                        <p class="story-text">Frenamos el scroll de tus clientes en menos de 3 segundos. Creamos spots magnéticos optimizados para vender, combinando ganchos psicológicos con una estética visual brutal.</p>
+                        <span class="card-link">Iniciar campaña &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Tarjeta 4: Fotografía -->
+                <a href="fotografia.html" class="service-card" style="text-decoration: none; display: flex;">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="icon">📸</div>
+                        <h3>Fotografía de Vanguardia</h3>
+                        <p class="story-text">Detenemos el tiempo. Ya sean retratos corporativos de alto nivel, fotografía de producto impecable o coberturas con alma, controlamos la luz para proyectar el estatus de tu empresa.</p>
+                        <span class="card-link">Capturar esencia &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ACTO 3: EL CLÍMAX / EL PACTO (Sección Contacto con Campos Animados) -->
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <span class="story-badge">El Clímax</span>
+                <h2>¿Listo para dirigir tu próximo gran capítulo?</h2>
+                <p>Las marcas ordinarias esperan su turno; las marcas extraordinarias provocan el cambio. Cuéntanos a qué villano del mercado nos enfrentamos y diseñemos la estrategia definitiva.</p>
+                
+                <form id="contactForm" class="story-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">¿Cómo se llama tu proyecto o marca?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">¿Dónde enviamos el plan de ataque? (Tu correo)</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder=" " required></textarea>
+                        <label for="message">Cuéntanos tu visión, el problema actual y el objetivo de esta historia...</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Encender Cámaras</button>
+                </form>
+                <!-- Mensaje de confirmación dinámico -->
+                <div id="formFeedback" class="hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL 
+         (Inyectado dinámicamente mediante js/main.js) -->
+    <footer id="global-footer"></footer>
+
+    <!-- Lógica Unificada de Inyección, Animaciones e Interacción Móvil -->
+    <script src="js/main.js"></script>
+</body>
+</html>
